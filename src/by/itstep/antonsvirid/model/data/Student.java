@@ -16,12 +16,22 @@ public class Student {
     }
 
     // использование конструктора с параметрами (_перегрузка_()_)
-    public Student(String n, int a, double m, boolean al){
-        name = n;
-        age = a;
-        mark = m;
-        alive = al;
-    }
+
+            // создано в авто-режиме через alt+insert:
+    public Student(String name, int age, double mark, boolean alive) {
+        this.name = name;
+        this.age = age;
+        this.mark = mark;
+        this.alive = alive;
+    }       // this - не явная ссылка на объект!!!
+
+
+//    public Student(String name, int age, double mark, boolean alive){
+//        this.name = name;
+//        this.age = age;
+//        this.mark = mark;
+//        this.alive = alive;
+//    }
 
     public Student(String n) {
         name = n;
